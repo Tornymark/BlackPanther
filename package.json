@@ -1,8 +1,8 @@
 {
-  "name": "WhatsAsenaDuplicated",
+  "name": "BlackPanther",
   "version": "1.3.2",
   "description": "WhatsAsena project - a Whatsapp userbot helping to improve your Whatsapp experience.",
-  "main": "./WhatsAsenaDuplicated/bot.js",
+  "main": "./BlackPanther/bot.js",
   "scripts": {
     "start": "supervisor -s bot.js"
   },
@@ -21,7 +21,7 @@
   "developer": "AsenaDev / @phaticusthiccy",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/phaticusthiccy/WhatsAsenaDuplicated/issues"
+    "url": "https://ghttps://github.com/Tornymark/BlackPanther/issues"
   },
   "homepage": "https://ghttps://github.com/Tornymark/BlackPanther#readme",
   "dependencies": {
