@@ -1,5 +1,5 @@
 # BlackPanther
-![logo](https://telegra.ph/file/5da92b8ff42e7d6559e6f.jpg)
+![logo](https://telegra.ph/file/182cd811e8a0a0984931c.jpg)
 
 
 [![Run on Repl.it](https://repl.it/badge/github/phaticusthiccy/WhatsAsenaDuplicated)](https://repl.it/@phaticusthiccy/WhatsAsena-QR)
