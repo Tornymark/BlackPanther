@@ -9,65 +9,71 @@ WhatsAsena - Yusuf Usta
 const config = require('../../config');
 const { DataTypes } = require('sequelize');
 
-const GreetingsDB = config.DATABASE.define('Greeting', {
+const FiltersDB = config.DATABASE.define('filter', {
     chat: {
       type: DataTypes.STRING,
       allowNull: false
     },
-    type: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
-    message: {
+    pattern: {
         type: DataTypes.TEXT,
         allowNull: false
+    },
+    text: {
+        type: DataTypes.TEXT,
+        allowNull: false
+    },
+    regex: {
+        type: DataTypes.BOOLEAN, allowNull: false, defaultValue: false
     }
 });
 
-async function getMessage(jid = null, tip = 'welcome') {
-    var Msg = await GreetingsDB.findAll({
-        where: {
-            chat: jid,
-            type: tip
-        }
+async function getFilter(jid = null, filter = null) {
+    var Wher = {chat: jid};
+    if (filter !== null) Wher.push({pattern: filter});
+    var Msg = await FiltersDB.findAll({
+        where: Wher
     });
 
     if (Msg.length < 1) {
         return false;
     } else {
-        return Msg[0].dataValues;
+        return Msg;
     }
 }
 
-async function setMessage(jid = null, tip = 'welcome', text = null) {
-    var Msg = await GreetingsDB.findAll({
+
+async function setFilter(jid = null, filter = null, tex = null, regx = false) {
+    var Msg = await FiltersDB.findAll({
         where: {
             chat: jid,
-            type: tip
+            pattern: filter
         }
     });
 
     if (Msg.length < 1) {
-        return await GreetingsDB.create({ chat: jid, type: tip, message:text });
+        return await FiltersDB.create({ chat: jid, pattern: filter, text: tex, regex: regx });
     } else {
-        return await Msg[0].update({ chat: jid, type: tip, message:text });
+        return await Msg[0].update({ chat: jid, pattern: filter, text: tex, regex: regx });
     }
 }
 
-async function deleteMessage(jid = null, tip = 'welcome') {
-    var Msg = await GreetingsDB.findAll({
+async function deleteFilter(jid = null, filter) {
+    var Msg = await FiltersDB.findAll({
         where: {
             chat: jid,
-            type: tip
+            pattern: filter
         }
     });
-
-    return await Msg[0].destroy();
+    if (Msg.length < 1) {
+        return false;
+    } else {
+        return await Msg[0].destroy();
+    }
 }
 
 module.exports = {
-    GreetingsDB: GreetingsDB,
-    getMessage: getMessage,
-    setMessage: setMessage,
-    deleteMessage: deleteMessage
+    FiltersDB: FiltersDB,
+    getFilter: getFilter,
+    setFilter: setFilter,
+    deleteFilter: deleteFilter
 };
