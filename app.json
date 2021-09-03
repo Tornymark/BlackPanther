@@ -32,12 +32,12 @@
             "value": "true"
         },
         "ANTİ_LİNK": {
-            "description": "അനാവശ്യ ലിങ്കുകളെ ബ്ലോക്ക്‌ ചെയ്യുന്നു. Link Blocking System.",
+            "description": "Link Blocking System.",
             "required": true,
             "value": "false"
         },
         "AUTO_BİO": {
-            "description": "About sectionil സമയം തിയതി എന്നിവ കാണിക്കുന്നു. Set true for auto date, time in biography.",
+            "description": "About sectionil Set true for auto date, time in biography.",
             "required": true,
             "value": "false"
         },
@@ -111,12 +111,12 @@
             "value": "default"
         },
         "WORK_TYPE": {
-            "description": "WhatsAsena Working Type. Public ആകുകയാണെങ്കിൽ എല്ലാവർക്കും നിങ്ങളുടെ Bot നെ ഉപയോഗികാം അഥവാ Private എന്ന് ആക്കിയാൽ നിങ്ങൾക്ക് മാത്രം ഉപയോഗിക്കാം.If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
+            "description": "WhatsAsena Working Type. Public Bot  Private If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
             "required": true,
             "value": "public"
         },
         "HEROKU_APP_NAME": {
-            "description": "Heroku inte app name enter ചെയുക(മുകളിൽ കൊടുത്ത app name). Heroku APP Name.",
+            "description": "Heroku inte app name enter (app name). Heroku APP Name.",
             "required": true
         },
         "DEBUG": {
@@ -125,7 +125,7 @@
             "value": "false"
         },
         "REMOVE_BG_API_KEY": {
-            "description": "ഫോട്ടോയുടെ BackGround പൂർണമായും ഇല്ലാതാകുന്നു . https://remove.bg എന്ന സൈറ്റിൽ പോയി API KEY എടുത്ത് ഇവടെ PASTE ചെയ്യുക",
+            "description": "BackGround. https://remove.bg API KEY PASTE ",
             "required": false
         },
         "ALIVE_MESSAGE": {
@@ -169,7 +169,7 @@
             "value": "https://i.hizliresim.com/loUtAb.jpg"
         },
         "NO_ONLINE": {
-            "description": "BOT ONLINE ഇൽ ഇല്ല എന്ന് കാണിക്കുക. Type true if you don't want to appear online.",
+            "description": "BOT ONLINE Type true if you don't want to appear online.",
             "required": false,
             "value": "true"
         },
