@@ -1,3 +1,5 @@
+
+
 <!-- Typing SVG -->
 <p align="center">
     <a href="https://git.io/J0hKr">
@@ -8,7 +10,6 @@
     </a>
 </p>
 
-# BlackPanther
 ![logo](https://telegra.ph/file/3436897e169f10ad905d0.jpg)
 
 
