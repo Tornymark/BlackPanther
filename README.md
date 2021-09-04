@@ -9,7 +9,7 @@
 </p>
 
 # BlackPanther
-![logo](https://telegra.ph/file/182cd811e8a0a0984931c.jpg)
+![logo](https://telegra.ph/file/3436897e169f10ad905d0.jpg)
 
 
 [![Run on Repl.it](https://repl.it/badge/github/phaticusthiccy/WhatsAsenaDuplicated)](https://repl.it/@phaticusthiccy/WhatsAsena-QR)
