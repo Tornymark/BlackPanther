@@ -10,7 +10,7 @@
     </a>
 </p>
 
-![logo](https://telegra.ph/file/3436897e169f10ad905d0.jpg)
+![logo](https://telegra.ph/file/999ea3b1bac805e579b7b.jpg)
 
 
 [![Run on Repl.it](https://repl.it/badge/github/phaticusthiccy/WhatsAsenaDuplicated)](https://repl.it/@phaticusthiccy/WhatsAsena-QR)
