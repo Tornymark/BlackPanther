@@ -50,13 +50,13 @@ else if (Config.WORKTYPE == 'public') {
               
                       var image = await axios.get(Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
        
-                  await message.client.sendMessage(message.jid, Buffer.from(image.data), MessageType.image, {mimetype: Mimetype.png, contextInfo: { forwardingScore: 1000, isForwarded: true }, quoted: message.data, caption: '```💕 Hey Bro!! I am still alive & kicking 😙```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```'+Config.BRANCH+'```\n\n*Developer:* TOXIC DEVIL\n\n*Git :* https://github.com/TOXIC-DEVIL/WhatsAlexa.git\n\n```💕 Thank You For Using WhatsAlexa 💞```' })
+                  await message.client.sendMessage(message.jid, Buffer.from(image.data), MessageType.image, {mimetype: Mimetype.png, contextInfo: { forwardingScore: 1000, isForwarded: true }, quoted: message.data, caption: '```💕 Hey Bro!! I am still alive & kicking 😙```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```'+Config.BRANCH+'```\n\n*Developer:* TONY MARK\n\n*Git :* https://github.com/TONY-MARK/BlackPanther.git\n\n```💕 Thank You For Using BlackPanther 💞```' })
             
               } else {
               
                       var image = await axios.get(Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
        
-                  await message.client.sendMessage(message.jid, Buffer.from(image.data), MessageType.image, {mimetype: Mimetype.png, contextInfo: { forwardingScore: 1000, isForwarded: true }, quoted: message.data, caption: Config.ALIVEMSG + '\n\n*POWERED BY WHATSALEXA, MADE BY TOXIC DEVIL*' })
+                  await message.client.sendMessage(message.jid, Buffer.from(image.data), MessageType.image, {mimetype: Mimetype.png, contextInfo: { forwardingScore: 1000, isForwarded: true }, quoted: message.data, caption: Config.ALIVEMSG + '\n\n*POWERED BY BLACKPANTHER, MADE BY TONY MARK*' })
               }
       }));
 
