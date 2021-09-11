@@ -138,7 +138,6 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
         console.log(
             chalk.green.bold('BlackPanther is Ferfect Ok! 💁🏻‍♀️')
         );
-
     });
     
     conn.on('chat-update', async m => {
