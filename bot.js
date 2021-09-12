@@ -259,7 +259,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
         await conn.connect();
     } catch {
         if (!nodb) {
-            console.log(chalk.red.bold('Eski sürüm stringiniz yenileniyor...'))
+            console.log(chalk.red.bold('ERROR...'))
             conn.loadAuthInfo(Session.deCrypt(config.SESSION)); 
             try {
                 await conn.connect();
