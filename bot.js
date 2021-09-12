@@ -240,15 +240,15 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
                             await command.function(whats, match);
                         } catch (error) {
                             if (config.LANG == 'EN' || config.LANG == 'ML') {
-                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/WhatsAlexa.png"),' +
+                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/WhatsAlexa.png")' +
                                 '\n*WhatsAlexa an error has occurred!*'+
                                 '\n*Report this error to the developer! [ TOXIC-DEVIL ]._*' +
                                 '\n*Error:* ```' + error + '```\n\n'
                                 , MessageType.image);
-               
-       
-                        } else {
-                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/WhatsAlexa.png"), MessageType.image, { caption: '*『 KESALAHAN 』*\n\n*WhatsAlexa telah terjadi kesalahan!*\n_Laporkan kesalahan ini ke pengembang [ TOXIC-DEVIL ]._\n\n*Kesalahan:* ```' + error + '```\n\n' });
+                         } else {
+                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/WhatsAlexa.png")' +
+                                '\n\n*🧞‍♂️ ' + error + '*\n'
+                                , MessageType.image);
                             }
                         }
                     }
