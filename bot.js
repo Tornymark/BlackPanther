@@ -239,7 +239,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
                         try {
                             await command.function(whats, match);
                         } catch (error) {
-                            if (config.LANG == 'EN' || config.LANG == 'ML') {
+                            if (config.LANG == 'EN' || config.LANG == 'TR') {
                                 await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/WhatsAlexa.png") +
                                 '\n*WhatsAlexa an error has occurred!*'+
                                 '\n*Report this error to the developer! [ TOXIC-DEVIL ]._*' +
